@@ -20,7 +20,6 @@ const StyledSocialWrapper = styled.div`
   padding-right: 2.5rem;
 
   overflow-x: scroll;
-  overflow-y: hidden;
   -webkit-overflow-scrolling: touch;
   &::-webkit-scrollbar {
     display: none;
