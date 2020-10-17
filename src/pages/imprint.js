@@ -41,7 +41,7 @@ const Imprint = ({ data }) => {
   const { body, frontmatter } = data.imprint.edges[0].node
   return (
     <Layout splashScreen={false}>
-      <SEO title="Derek Saffe Portfolio" meta={[{ name: 'robots', content: 'noindex'}]} />
+      <SEO title="Derek Saffe's Portfolio" meta={[{ name: 'robots', content: 'noindex'}]} />
       <StyledSection id={frontmatter.title}>
         <StyledContentWrapper>
           <h1>{frontmatter.title}</h1>
