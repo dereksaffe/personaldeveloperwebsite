@@ -8,7 +8,7 @@ const { siteShortTitle } = config
 
 const StyledLogo = styled.div`
   position: relative;
-  z-index: 13;
+  z-index: 1;
 
   font-size: ${({ size }) => (size ? size : "1.75rem")};
   font-weight: 900;
