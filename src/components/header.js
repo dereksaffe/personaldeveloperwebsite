@@ -10,6 +10,8 @@ import ContentWrapper from "../styles/ContentWrapper"
 import Logo from "./logo"
 import Sidebar from "./sidebar"
 import Navbar from "./navbar"
+import GlobalStyle from "../styles/GlobalStyle"
+
 
 const StyledHeader = motion.custom(styled.header`
   width: 100%;
@@ -124,7 +126,7 @@ const Header = () => {
       <Helmet bodyAttributes={{ class: open ? "blur" : "" }} />
       <StyledContentWrapper>
         <Link to="/" aria-label="home">
-          <Logo color="primary" size="2rem" />
+          <Logo color="primary" size="2rem" id="main-content" />
         </Link>
         {navigation}
       </StyledContentWrapper>

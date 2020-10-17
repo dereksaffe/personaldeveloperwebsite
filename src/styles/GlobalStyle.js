@@ -2,7 +2,7 @@ import { createGlobalStyle } from 'styled-components'
 import modernNormalize from "styled-modern-normalize"
 
 const GlobalStyle = createGlobalStyle`
-    
+
     // Import normalize.css
     ${modernNormalize}
 
@@ -30,7 +30,7 @@ const GlobalStyle = createGlobalStyle`
         &.blur {
             overflow: hidden;
             #___gatsby #main-content > * {
-              filter: blur(5px) ;
+              filter: blur(5px);
               transition: all .3s ease-out;
               pointer-events: none;
               user-select: none;
