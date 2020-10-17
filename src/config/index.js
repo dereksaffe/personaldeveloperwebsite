@@ -2,7 +2,7 @@ module.exports = {
 
     author: "@konstantinmuenster",
     siteTitle: "Derek Saffe's Web Portfolio",
-    siteShortTitle: "DJS", // Used as logo text in header, footer, and splash screen
+    siteShortTitle: "Derek Saffe", // Used as logo text in header, footer, and splash screen
     siteDescription: "A modern one-page portfolio with a clean yet expressive design.",
     siteUrl: "https://gatsby-starter-portfolio-minimal.netlify.app/",
     siteLanguage: "en_US",
