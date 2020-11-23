@@ -51,7 +51,7 @@ const StyledContentWrapper = styled(ContentWrapper)`
     }
     .projects {
       display: flex;
-      flex-direction: row;
+      flex-direction: column;
       margin-top: -2.5rem;
       padding: 2.5rem 2.5rem;
       overflow-x: scroll;
@@ -148,6 +148,13 @@ const StyledProject = styled(motion.div)`
       font-size: 1.375rem;
       line-height: 1.625rem;
       font-weight: 700;
+      a {
+
+      }
+      a:hover {
+                color: ${({ theme }) => theme.colors.primary};
+        transition: ease-in-out 150ms;
+      }
     }
     .tags {
       display: flex;
@@ -181,6 +188,7 @@ const StyledProject = styled(motion.div)`
   }
   .screenshot {
     width: 100%;
+    height: 100%;
     max-width: 25rem;
     height: 15rem;
     box-shadow: 0 0 2.5rem rgba(0, 0, 0, 0.16);
@@ -257,9 +265,7 @@ const Projects = ({ content }) => {
           animate={tOnScreen ? "visible" : "hidden"}
         >
           <h3 className="section-title">{sectionDetails.frontmatter.title}</h3>
-          <div className="counter">
-            {visibleProject} / {projects.length}
-          </div>
+
         </motion.div>
         <div className="projects">
           {projects.map(project => {
@@ -282,7 +288,16 @@ const Projects = ({ content }) => {
                     <div className="category">
                       {frontmatter.emoji} {frontmatter.category}
                     </div>
-                    <div className="title">{frontmatter.title}</div>
+                    <div className="title">{frontmatter.external &&(
+                      <a
+                        href={frontmatter.external}
+                        target="_blank"
+                        rel="nofollow noopener noreferrer"
+                        aria-label="External Link"
+                      >
+                        {frontmatter.title}
+                      </a>
+                    )}</div>
                     <MDXRenderer>{body}</MDXRenderer>
                     <div className="tags">
                       {frontmatter.tags.map(tag => (
