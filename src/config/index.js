@@ -6,7 +6,7 @@ module.exports = {
     siteDescription: "Derek Saffe's portfolio",
     siteUrl: "https://www.dereksaffe.com",
     siteLanguage: "en_US",
-    siteIcon: "src/content/favicon.ico", // Relative to gatsby-config file
+    siteIcon: "src/content/icon.png", // Relative to gatsby-config file
 
     splashScreen: false, // Set this to true if you want to use the splash screen
 
