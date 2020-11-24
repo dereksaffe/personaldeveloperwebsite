@@ -190,7 +190,7 @@ const StyledProject = styled(motion.div)`
     width: 100%;
     height: 100%;
     max-width: 25rem;
-    height: 15rem;
+    height: 12rem;
     box-shadow: 0 0 2.5rem rgba(0, 0, 0, 0.16);
     transition: all 0.3s ease-out;
     &:hover {
